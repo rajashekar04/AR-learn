@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.4.0/dist/aframe-extras.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
+        integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <a-scene arjs="detectionMode: mono_and_matrix; matrixCodeType: 3x3">
+        <a-marker type="pattern" url="./markers/pattern-A.patt">
+            <a-entity gltf-model="./Models/apple.glb" position="0 0 2" scale="40 40 40" rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/pattern-B.patt">
+            <a-entity gltf-model="./Models/ball.glb" scale="2 2 2" rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker name="cat" class="ar-marker" type="pattern" url="./markers/pattern-C.patt">
+            <a-entity gltf-model="./Models/cat.glb" scale="1.5 1.5 1.5" rotation="0 -90 90"></a-entity>
+        </a-marker>
+
+        <a-marker name="dog" class="ar-marker" type="pattern" url="./markers/pattern-D.patt">
+            <a-entity gltf-model="./Models/dog.glb" scale="3 3 3" rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker name="elephant" class="ar-marker" type="pattern" url="./markers/pattern-E.patt">
+            <a-entity gltf-model="./Models/elephant.glb" position="0 0 2" scale="0.005 0.005 0.005"
+                rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/pattern-F.patt">
+            <a-entity gltf-model="./Models/fish.glb" scale="5 5 5" rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/pattern-G.patt">
+            <a-entity gltf-model="./Models/goat.glb" position="0 0 2" scale="2.2 2.2 2.2" rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/pattern-H.patt">
+            <a-entity gltf-model="./Models/hat.glb" position="0 0 2" scale="0.7 0.7 0.7" rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/pattern-I.patt">
+            <a-entity gltf-model="./Models/igloo.glb" position="0 0 1" scale="1.5 1.5 1.5"
+                rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/pattern-J.patt">
+            <a-entity gltf-model="./Models/jug.glb" position="0 0 1.5" scale="1.5 1.5 1.5"
+                rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/pattern-K.patt">
+            <a-entity gltf-model="./Models/kite.glb" scale="10 10 5" rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/pattern-L.patt">
+            <a-entity gltf-model="./Models/lion.glb" scale="4 4 4" rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/pattern-M.patt">
+            <a-entity gltf-model="./Models/monkey.glb" position="0 0 2" scale="2 2 2" rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/pattern-N.patt">
+            <a-entity gltf-model="./Models/nut.glb" position="1 0 0" scale="50 50 50" rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/pattern-O.patt">
+            <a-entity gltf-model="./Models/orange.glb" position="" scale="0.05 0.05 0.05" rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/pattern-P.patt">
+            <a-entity gltf-model="./Models/pumpkin.glb" position="" scale="0.025 0.025 0.025"
+                rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/pattern-Q.patt">
+            <a-entity gltf-model="./Models/queen.glb" position="" scale="0.1 0.1 0.1" rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/pattern-R.patt">
+            <a-entity gltf-model="./Models/rose.glb" position="0 0 2" scale="3 3 3" rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/pattern-S.patt">
+            <a-entity gltf-model="./Models/ship.glb" position="" scale="0.2 0.2 0.2" rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/pattern-T.patt">
+            <a-entity gltf-model="./Models/tiger.glb" position="1 0 0" scale="3 3 3" rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/pattern-U.patt">
+            <a-entity gltf-model="./Models/umbrella.glb" position="" scale="0.2 0.2 0.2" rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/pattern-V.patt">
+            <a-entity gltf-model="./Models/van.glb" position="" scale="1 1 1" rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/pattern-W.patt">
+            <a-entity gltf-model="./Models/watch.glb" position="" scale="0.2 0.2 0.2" rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/pattern-X.patt">
+            <a-entity gltf-model="./Models/xylophone.glb" position="" scale="0.5 0.5 0.5" rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/pattern-Y.patt">
+            <a-entity gltf-model="./Models/yoga.glb" position="0 0 2" scale="0.025 0.025 0.025"
+                rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/pattern-Z.patt">
+            <a-entity gltf-model="./Models/zebra.glb" position="0 0 2" scale="200 200 200"
+                rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/MCB/pattern-heart.patt">
+            <a-entity gltf-model="./Models/heart.glb" position="0 0 0" scale="3 3 3" rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/MCB/pattern-kidney.patt">
+            <a-entity gltf-model="./Models/kidney.glb" position="1 0 1" scale="0.5 0.5 0.5"
+                rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/MCB/pattern-pancreas.patt">
+            <a-entity gltf-model="./Models/pancreas.glb" position="1 0 0" scale="0.25 0.25 0.25"
+                rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/MCB/pattern-cube.patt">
+            <a-entity gltf-model="./Models/cube.glb" position="0 0 0" scale="" rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/MCB/pattern-octahedron.patt">
+            <a-entity gltf-model="./Models/octahedron.glb" position="0 0 0" scale="2 2 2" rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/MCB/pattern-diamond.patt">
+            <a-entity gltf-model="./Models/diamond.glb" position="0 0 0" scale="0.5 0.5 0.5"
+                rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./markers/MCB/pattern-nh3.patt">
+            <a-entity gltf-model="./Models/nh3.glb" position="0 0 2" scale="0.03 0.03 0.03"
+                rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+        <a-entity camera></a-entity>
+
+    </a-scene>
+
+    <script>
+        let cat = new Howl({
+            src: ['./audio/cat.mp3']
+        });
+        let dog = new Howl({
+            src: ['./audio/dog.mp3']
+        });
+        let elephant = new Howl({
+            src: ['./audio/elephant.mp3']
+        });
+        let audioMap = {
+            'cat': cat,
+            'dog': dog,
+            'elephant': elephant
+        }
+        
+        window.onload = function () {
+            let arMarkers = document.getElementsByClassName('ar-marker');
+
+            Array.from(arMarkers).forEach(function (arMarker) {
+                let name = arMarker.getAttribute('name');
+                arMarker.addEventListener('markerFound', function () {
+                    audioMap[name].play();
+                });
+                arMarker.addEventListener('markerLost', function () {
+                    audioMap[name].stop();
+                });
+            });
+        }
+
+    </script>
+
+</body>
+
+</html>
